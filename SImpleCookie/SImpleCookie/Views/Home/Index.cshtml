@@ -1,0 +1,14 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+    <title>Cookie</title>
+</head>
+<body>
+<h1>@ViewBag?.CookieValue</h1>
+<a asp-controller="Home" asp-action="Create">Create</a>
+<a asp-controller="Home" asp-action="Delete">Delete</a>
+</body>
+</html>
